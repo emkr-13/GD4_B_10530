@@ -5,6 +5,7 @@
 <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <div class="body d-flex justify-content-between">
                     <h4>LIST MOVIE</h4>
+                    <a href="../page/CreateMoviesPage.php"><i style="color: red" class="fa-solid fa-plus"></i></a>
           </div>
           <hr>
           <table class="table ">
@@ -24,7 +25,15 @@
                               } else {
                                         $no = 1;
                                         while ($data = mysqli_fetch_assoc($query)) {
-                                                  echo ' <tr> <th scope="row">' . $no . '</th> <td>' . $data['name'] . '</td> <td>' . $data['genre'] . '</td> <td>' . $data['realese'] . '</td> <td>' . $data['season'] . '</td> <td> <a href="../process/deleteMovieProcess.php?id=' . $data['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i> </a> </td> </tr>';
+                                                  echo ' <tr> 
+                                                  <th scope="row">' . $no . '</th>
+                                                  <td>' . $data['name'] . '</td> 
+                                                  <td>' . $data['genre'] . '</td>
+                                                  <td>' . $data['realese'] . '</td>
+                                                  <td>' . $data['season'] . '</td>
+                                                  <td> <a href="../process/deleteMovieProcess.php?id=' . $data['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')">
+                                                  <i style="color: red" class="fa fa-trash fa-2x"></i> </a> </td> 
+                                                  </tr>';
                                                   $no++;
                                         }
                               } ?> </tbody>

@@ -61,6 +61,34 @@ echo '
     </style>
   </head>
   <body>
-          <aside > <div class="d-flex"> <div class="side-bar"> <h2 class="text-light text-center pt-2">PHP</h2> <hr> <div class="menu"> <div class="content-menu" > <i class="fa fa-dashboard"></i> <a href="./dashboardPage.php" style="font-weight:600" >Dashboard</a> </div> <div class="content-menu " > <i class="fa fa-film"></i> <a href="./listMoviesPage.php" style="font-weight:600">List Movie</a> </div> <div class="content-menu " > <i class="fa fa-sign-out"></i> <a href="../process/logoutProcess.php" style="font-weight:600">&nbspLogout</a> </div> <hr> </div> </div>'
+          <aside > 
+          <div class="d-flex"> 
+          <div class="side-bar"> 
+          <h2 class="text-light text-center pt-2">PHP</h2>
+          <hr> <div class="menu"> <div class="content-menu" > 
+          <i class="fa fa-dashboard"></i> 
+          <a href="./dashboardPage.php" style="font-weight:600" >Dashboard</a> 
+          </div> 
+          <div class="content-menu " > 
+
+          <i class="fa fa-film"></i> 
+          <a href="./listMoviesPage.php" style="font-weight:600">List Movie</a>
+
+
+            </div>
+            <div class="content-menu " > 
+
+            <i class="fa fa-user"></i> 
+            <a href="./editProfilPage.php" style="font-weight:600"> Edit Profil</a>
+            </div>
+            <div class="content-menu " > <i class="fa fa-sign-out">
+            </i> 
+            <a href="../process/logoutProcess.php" style="font-weight:600">&nbspLogout</a>
+
+
+            </div>
+              <hr>
+            </div> 
+          </div>'
 ?>
 <!-- a -->
