@@ -3,27 +3,36 @@
 <body>
           <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <div class="body d-flex justify-content-between">
-                              <h4>Tambah Movie</h4>
+                              <h4>Tambah Series</h4>
 
                     </div>
                     <hr>
-                    <form action="../process/CreateMoviesProcess.php" class="row g-3" method="post">
+                    <form action="../process/createSeriesProcess.php" class="row g-3" method="post">
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Name</label>
                                         <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Genre</label>
-                                        <input class="form-control" id="genre" name="genre" aria-describedby="emailHelp">
+                                        <select class="form-select" aria-label="Default select example" name="genre" id="genre">
+                                                  <option value="Action">Action</option>
+                                                  <option value="Comedy">Comedy</option>
+                                                  <option value="Horor">Horor</option>
+                                                  <option value="Fantasy">Fantasy</option>
+
+                                        </select>
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">realese</label>
-                                        <input class="form-control" id="realese" name="realese" aria-describedby="emailHelp" type="number">
+                                        <input class="form-control" id="realease" name="realease" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Season</label>
                                         <input class="form-control" id="season" name="season" aria-describedby="emailHelp" type="number">
                               </div>
+                              <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Episode</label>
+                                        <input class="form-control" id="episode" name="episode" aria-describedby="emailHelp" type="number">
+                              </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">synopsis</label>
                                         <input class="form-control" id="synopsis" name="synopsis" aria-describedby="emailHelp">
                               </div>
-                              <div class="d-grid gap-2"> <button type="submit" class="btn btn-primary" name="createMovie">Create</button> </div>
+                              <div class="d-grid gap-2"> <button type="submit" class="btn btn-primary" name="createSeries">Create</button> </div>
                     </form>
           </div>
 

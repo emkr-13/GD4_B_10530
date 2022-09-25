@@ -70,6 +70,7 @@ echo '
           <i class="fa fa-dashboard"></i> 
           <a href="./dashboardPage.php" style="font-weight:600" >Dashboard</a> 
           </div> 
+
           <div class="content-menu " > 
 
           <i class="fa fa-film"></i> 
@@ -77,6 +78,14 @@ echo '
 
 
             </div>
+
+            <div class="content-menu " > 
+
+            <i class="fa fa-film"></i> 
+            <a href="./listSeriesPage.php" style="font-weight:600">List Series</a>
+  
+  
+              </div>
 
             <div class="content-menu " > 
 
