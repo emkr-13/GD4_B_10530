@@ -1,15 +1,15 @@
 <?php
 
 if (isset($_POST['Update'])) {
+          session_start();
           include('../db.php');
           $user =  $_SESSION['user']['id'];
           $email = $_POST['email'];
           $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
           $name = $_POST['name'];
           $phonenum = $_POST['phonenum'];
-          $membership = $_POST['membership'];
 
-          $query = mysqli_query($con, "UPDATE users SET email='$email',password='$password',name='$name', phonenum='$phonenum' ,membership='$membership'  WHERE id ='$user'");
+          $query = mysqli_query($con, "UPDATE users SET email='$email',password='$password',name='$name', phonenum='$phonenum'  WHERE id ='$user'");
           if ($query) {
                     echo
                     '<script>
