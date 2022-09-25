@@ -29,6 +29,7 @@ echo '
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Dashboard!</title>
     <style>
       * {
@@ -76,11 +77,15 @@ echo '
 
 
             </div>
+
             <div class="content-menu " > 
 
             <i class="fa fa-user"></i> 
-            <a href="./editProfilPage.php" style="font-weight:600"> Edit Profil</a>
-            </div>
+            <a href="./editProfilPage.php" style="font-weight:600">Edit Profil</a>
+  
+              </div>
+
+
             <div class="content-menu " > <i class="fa fa-sign-out">
             </i> 
             <a href="../process/logoutProcess.php" style="font-weight:600">&nbspLogout</a>

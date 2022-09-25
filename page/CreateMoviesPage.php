@@ -10,10 +10,10 @@
                                         <input class="form-control" id="genre" name="genre" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">realese</label>
-                                        <input class="form-control" id="realese" name="realese" aria-describedby="emailHelp">
+                                        <input class="form-control" id="realese" name="realese" aria-describedby="emailHelp" type="number">
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Season</label>
-                                        <input class="form-control" id="season" name="season" aria-describedby="emailHelp">
+                                        <input class="form-control" id="season" name="season" aria-describedby="emailHelp" type="number">
                               </div>
                               <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">synopsis</label>
                                         <input class="form-control" id="synopsis" name="synopsis" aria-describedby="emailHelp">
