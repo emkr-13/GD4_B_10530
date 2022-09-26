@@ -1,8 +1,9 @@
 <?php
 
 if (isset($_POST['updateSeries'])) {
+          session_start();
           include('../db.php');
-          $id = $_POST['id'];
+          $series = $_SESSION['series']['id'];
           $name = $_POST['name'];
           $genre = $_POST['genre'];
           $realease = $_POST['realease'];
@@ -10,19 +11,19 @@ if (isset($_POST['updateSeries'])) {
           $episode = $_POST['episode'];
           $synopsis = $_POST['synopsis'];
 
-
-          // if ($query) {
-          //           echo
-          //           '<script>
-          //           alert("Edit Success"); 
-          //           window.location = "../page/editSeriesPage.php"
-          //           </script>';
-          // } else {
-          //           echo
-          //           '<script>
-          //           alert("Edit Failed");
-          //           </script>';
-          // }
+          $query = mysqli_query($con, "UPDATE series SET name='$name',genre='$genre',realease='$realease',season='$season',episode='$episode',synopsis='$synopsis'  WHERE id ='$series'");
+          if ($query) {
+                    echo
+                    '<script>
+                    alert("Edit Success"); 
+                    window.location = "../page/listSeriesPage.php"
+                    </script>';
+          } else {
+                    echo
+                    '<script>
+                    alert("Edit Failed");
+                    </script>';
+          }
 } else {
           echo '<script> window.history.back() </script>';
 }

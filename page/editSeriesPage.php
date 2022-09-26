@@ -1,10 +1,12 @@
 <?php include '../component/sidebar.php';
+
 $id = $_GET['id'];
 $query = "SELECT * from series where id='$id'";
 $result = mysqli_query($con, $query) or die(mysqli_error($con));
 $series = mysqli_fetch_assoc($result);
-
+$_SESSION['series'] = $series;
 $genre = $series['genre'];
+
 ?>
 
 <body>

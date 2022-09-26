@@ -34,9 +34,9 @@
                                                   <th scope="row">' . $no . '</th>
                                                   <td>' . $data['name'] . '</td> 
                                                   <td>' . $data['genre'] . '</td>
+                                                  <td>' . $data['realease'] . '</td>
                                                   <td>' . $data['season'] . '</td>
                                                   <td>' . $data['episode'] . '</td>
-                                                  <td>' . $data['season'] . '</td>
                                                   <td> <a href="../page/editSeriesPage.php?id=' . $data['id'] . '"> 
                                                   <i style="color: orange" class="fa fa-edit fa-2x"></i> </a> </td>
                                                   <td> <a href="../process/deleteSeriesProcess.php?id=' . $data['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')">

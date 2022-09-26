@@ -2,6 +2,7 @@
 include('../db.php');
 $query = mysqli_query($con, "SELECT * FROM users WHERE id = " . $_SESSION['user']['id']);
 $user = mysqli_fetch_assoc($query);
+$member = $user['membership'];
 
 ?>
 
@@ -32,7 +33,20 @@ $user = mysqli_fetch_assoc($query);
 
                     <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Membership</label>
-                              <input class="form-control" id="membership" name="membership" aria-describedby="emailHelp" value="<?php echo $user['membership'] ?>" disabled>
+                              <select class="form-select" aria-label="Default select example" name="membership" id="membership" disabled>
+                                        <option value="Reguler" <?php
+                                                                      if ($member == "Reguler") {
+                                                                                echo 'selected';
+                                                                      }                              ?>>Reguler</option>
+                                        <option value="Platinum" <?php
+                                                                      if ($member == "Platinum") {
+                                                                                echo 'selected';
+                                                                      }                              ?>>Platinum</option>
+                                        <option value="Gold" <?php
+                                                                      if ($member == "Gold") {
+                                                                                echo 'selected';
+                                                                      }                              ?>>Gold</option>
+                              </select>
                     </div>
 
 
